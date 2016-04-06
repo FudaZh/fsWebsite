@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)http://www.dowebok.com/demo/2014/77/index6.html#page1 -->
+<html lang="zh-CN" style="overflow: hidden; height: 100%;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Course Registration</title>
+<link type="text/css" rel="stylesheet" href="./css/CRstyle.css">
+<link type="text/css" rel="stylesheet" href="./css/formStyle.css">
+<link type="text/css" rel="stylesheet" href="./css/buttonStyle.css">    
+<link type="text/css" rel="stylesheet" href="./css/courseStyle.css">    
+
+    
+<link rel="stylesheet" href="./css/jquery.fullPage.css">
+<script src="./js/jquery.min.js"></script>
+<script src="./js/jquery.fullPage.js"></script>
+
+
+<link type="text/css" rel="stylesheet" href="./css/jquery.pwstabs.css">
+<script src="./js/jquery.pwstabs.js"></script>
+
+<style>
+.section{
+	text-align:center;
+}
+
+#section-content-course {
+    position: relative;
+	margin: 0 auto 0 auto;
+	width: 65%;
+}
+    
+#header {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    right: 0;
+    top: 0;
+    
+    -webkit-box-shadow: 0px 3px 5px rgba(100, 100, 100, 0.49);
+    -moz-box-shadow:    0px 3px 5px rgba(100, 100, 100, 0.49);
+    box-shadow:         0px 3px 5px rgba(100, 100, 100, 0.49);
+}
+    
+.header {
+    background-color: aquamarine;
+}
+    
+#section-content-reg{
+    position: relative;
+	margin: 0 auto 0 auto;
+    padding: 20px;
+    padding-bottom: 15px;
+	width: 65%;
+	background-color:#ffffcc;
+}
+
+#section-content-summary {
+	margin: 0 auto 0 auto;
+    padding: 20px 35px 20px 35px;
+	width: 65%;
+	height: 450px;
+	background-color:#e9e9e9;
+}
+
+    .summary-content {
+        text-align: left;
+    }    
+    
+#left-reg {
+	margin-top:10px;
+	margin-left:5px;
+	border-right-style:dotted;
+	border-right-width:1px;
+	border-right-color:gray;
+	float: left;
+	width: 55%;
+	height: 85%;
+}
+
+#right-reg {
+	margin-top:10px;
+	margin-right:5px;
+	float:right;
+	width:42%;
+	height:85%;
+}
+
+#right-reg h3 {
+	text-align:left;
+	margin-bottom: 15px;
+}
+
+#right-reg ul {
+	list-style:none;
+	margin-top:0px;
+	padding: 0;
+}
+
+#right-reg ul li {
+	margin-bottom: 3px;
+}
+
+.cour-name {
+	width:60%;
+	text-align:left;
+	display: inline-block;
+}
+.price {
+	width:30%;
+	text-align:left;
+	display: inline-block;
+}
+.total-left {
+	width:60%;
+	text-align:right;
+	display: inline-block;
+	border-top: 1px solid #000;
+	padding-left:1px;
+}
+.total-right {
+	margin:0px;
+	padding:0px;
+	
+	width:30%;
+	text-align:left;
+	display: inline-block;
+	border-top: 1px solid #000;
+}
+    
+    .button-fix {
+        width: 42%;
+        text-align: center;
+        position: absolute;
+        bottom: 30px;
+    }
+
+
+</style>
+<script>
+$(function(){
+	$('#dowebok').fullpage({
+		sectionsColor: ['#fff', '#fff', '#fff', '#f90'],
+	});
+	
+	$('.hello_world').pwstabs({
+
+      // scale / slideleft / slideright / slidetop / slidedown / none
+      effect: 'scale', 
+
+      // The tab to be opened by default
+      defaultTab: 1,    
+
+      // Set custom container width
+      // Any size value (1,2,3.. / px,pt,em,%,cm..)
+      containerWidth: '100%',
+
+      // Tabs position: horizontal / vertical
+      tabsPosition: 'horizontal',
+
+      // Tabs horizontal position: top / bottom
+      horizontalPosition: 'top',
+
+      // Tabs vertical position: left / right
+      verticalPosition: 'left',
+
+      // BETA: Make tabs container responsive: true / false (!!! BETA)
+      responsive: false,
+
+      // Themes available: default: '' / pws_theme_violet / pws_theme_green / pws_theme_yellow
+      // pws_theme_gold / pws_theme_orange / pws_theme_red / pws_theme_purple / pws_theme_grey
+      theme: '',
+
+      // Right to left support: true/ false
+      rtl: false
+
+   });
+});
+
+</script>
+</head>
+
+<body>
+	<div id="dowebok">
+		<!-- Course Selection-->
+		<div class="section" style="background-image: url(img/bg.jpg);">
+			<div id="header" class="header"><h5>Header</h5></div>
+            <div id="section-content-course" >
+			<div class="hello_world">
+                <div data-pws-tab="anynameyouwant1" data-pws-tab-name="热门课程">
+                    <ol>
+                        <li><a href="#">Coporate Law</a></li>
+                        <li>Operate System</li>
+                        <li>Audit</li>
+                        <li>Electrical Theory</li>
+                        <li>Orient-object Foundation</li>
+                        <li>Paython</li>
+                        <li>PHP</li>
+                        <li>Product Design</li>
+                        <li>Industry Design</li>
+                        <li>Mirosoft Certificate Training</li>
+                        <li>Network Theory</li>
+                    </ol>
+                </div>
+			    <div data-pws-tab="anynameyouwant2" data-pws-tab-name="所有课程">
+                <ol>
+                        <li><a href="#">Coporate Law</a></li>
+                        <li>Operate System</li>
+                        <li>Audit</li>
+                        <li>Electrical Theory</li>
+                        <li>Orient-object Foundation</li>
+                        <li>Paython</li>
+                        <li>PHP</li>
+                        <li>Product Design</li>
+                        <li>Industry Design</li>
+                        <li>Mirosoft Certificate Training</li>
+                        <li>Network Theory</li>
+                </ol>
+                </div>
+			    <div data-pws-tab="anynameyouwant3" data-pws-tab-name="ACCOUNTING">
+                    <ol>        
+                    <li><a href="#">Corporate Reporting</a></li>
+                        <li>Sustainability</li>
+                        <li>Advanced Financial Accounting</li>
+                        <li>Auditing and Assurance</li>
+                        <li>Fundamentals of Finance</li>
+                        <li>Business Foundations</li>
+                        <li>Business Economics</li>
+                </ol>
+                </div>
+				<div data-pws-tab="anynameyouwant4" data-pws-tab-name="FINANCE">Our third tab<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>
+				<div data-pws-tab="anynameyouwant5" data-pws-tab-name="IT">Our third tab<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>
+			</div>
+			</div>
+		</div>
+		<!-- Collection Personal information Section-->
+		<div class="section">
+			<div id="section-content-reg">
+				<h1>Personal Information&nbsp|&nbspSelected Courses</h1>
+				<div id="left-reg">
+					<form action="/my-handling-form-page" method="post">
+						<div>
+							<label for="name">Name:</label>
+							<input type="text" id="name" name="user_name" />
+						</div>
+						<div>
+							<label for="male">Male</label>
+							<input type="radio" name="gender" value="male">
+							<label for="female">Female</label>
+							<input type="radio" name="gender" value="female">
+						</div>
+						<div>
+							<label for="name">Telephone:</label>
+							<input type="text" id="phone" name="contact_phone" />
+						</div>
+						<div>
+							<label for="mail">E-mail:</label>
+							<input type="email" id="mail" name="user_email" />
+						</div>
+						<div>
+							<label for="name">Unversity:</label>
+							<input type="text" id="uni" name="univ" />
+						</div>
+						<div>
+							<label for="mail">Major:</label>
+							<input type="text" id="major" name="major" />
+						</div>
+						<div>
+							<hr />
+						</div>
+						<div>
+							<label for="coupon">Coupon Code:</label>
+							<input type="text" id="code" name="promo_code" />
+						</div>
+						<div>
+							<label for="group">Together&nbsp;with:</label>
+							<select name="group">
+							  <option value ="1"> - Alone - </option>
+							  <option value ="5"> - 5 Ups - </option>
+							  <option value="10"> - 10 Ups - </option>
+							</select>
+						</div>
+                        <div>
+                            <input type="checkbox" name="wechat" value="wechat">
+                            Wechat shares ad. with friends.
+                        </div>
+                        <div>
+
+                            <a href="#" class="myButtonApply">Apply</a>
+                        </div>
+					<!--	
+						<div class="button">
+							<button type="submit">Send your message</button>
+						</div>
+						
+					-->
+					</form>
+				</div>
+				<div id="right-reg">
+					<h3>You have selected&nbsp:</h3>
+					<ul>
+						<li>
+						<div class="cour-name">Corporate Law&nbspVIP班</div>
+						<div class="price">$9,999&nbsp[Delete]</div>
+						</li>
+						<li>
+						<div class="cour-name">Businesss Finance&nbsp期末冲刺班</div>
+						<div class="price">$1,999&nbsp[Delete]</div>
+						</li>
+                        <li>
+  						<div class="cour-name">$50 Promotation&nbsp</div>
+						<div class="price">-$50&nbsp[Delete]</div>                      
+                        </li>
+						<li>
+						<br/>
+						<br/>
+						</li>
+						<li>
+							<div class="total-left">&nbspTOTAL&nbsp:</div>
+							<div class="total-right">$11,948</div>
+						</li>
+					</ul>
+                    <div class="button-fix">
+                        <a href="#" class="myButton">Back</a>
+                        <a href="#" class="myButton">Next</a>
+                    </div>
+				</div>
+                <div style="clear:both"></div>
+			</div>
+		</div>
+		<!-- Comformation Section-->
+		<div class="section">
+			<div id="section-content-summary">
+				<h1>Summary</h1>
+                <div class="summary-content">
+                    <p><h5>Thank you for choosing us</h5></p>
+                    <p>
+                        <strong>Ref No.:</strong>&nbsp;#00066888<br/>
+                        <strong>Time:</strong>&nbsp;Tuesday&nbsp;15th&nbsp;March&nbsp;2016<br/>
+                        <strong>Name:</strong>&nbsp;Jenne Willson<br/>
+                        <strong>Contact No.:</strong>&nbsp;0404-666-888<br />
+                        <strong>E-mail</strong>&nbsp;xxxxx@gmail.com<br />
+                    </p>
+                    <p>
+                        <strong>Total&nbsp;due&nbsp;amount:</strong>&nbsp;$11,948 <br />
+                    </p>
+                    <p>
+                        <h5> We will send a confirmation email to xxxx@gmail.com shortly.<h5>
+                        <h5> If you have any questions, please contact with us via emai (xxx@linghang.edcuation) or come to our office during 9:30 - 6:00 pm Monday - Firday</h5>
+                    </p>
+                </div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
